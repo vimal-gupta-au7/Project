@@ -17,13 +17,13 @@ To run
 '''
 after creating Virtual environment and installing the module requests
 run main.py file using command
-# python main.py
+### python main.py
 and wait for approx 25 minute to get update
-you can reduce the timer by changing the value of sleep.
+you can reduce the timer by changing the value of sleep
 and the emergency threshold is 500000.
 
 
-# Here the channel Link 
+## Here the channel Link 
  [https://t.me/bitcoin_Notification]
 
 [PYTHON]
@@ -147,5 +147,5 @@ An important thing is to avoid sending out requests too frequently, for two reas
 -If your app sends too many requests to the Coinmarketcap API your IP might get banned or temporarily suspended.
 That is why we need to “go to sleep” (stop the execution of the loop) for at least 5 minutes before we get new data. 
  
-##Source
+## Source
 https://realpython.com/python-bitcoin-ifttt/
