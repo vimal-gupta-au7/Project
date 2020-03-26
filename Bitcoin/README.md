@@ -4,7 +4,7 @@
 
 Start a virtual environment in Shell using this Python3 command.
 
- ``` $ virtualenv -p python .```
+ ``` $ virtualenv -p python3 .```
  
 Now we need to activate the virtual environment and install required dependencies.
 
