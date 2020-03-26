@@ -1,5 +1,17 @@
 # Bitcoin Price Alert script
 
+## PROJECT SETUP
+
+Start a virtual environment in Shell using this Python3 command.
+
+ ``` $ virtualenv -p python .```
+ 
+Now we need to activate the virtual environment and install required dependencies.
+
+``` $ source bin/activate  # To activate the virtual environment ```
+
+``` $ pip install requests==2.18.4  # We only need the requests package ```
+
 
 [PYTHON]
 
@@ -52,6 +64,7 @@ To create a new test applet follow these steps:
 To see the documentation on how to use the IFTTT webhooks go to <a href="https://ifttt.com/maker_webhooks">this page</a> and click on the “Documentation” button in the top right corner. The documentation page contains the webhook URL and it looks like this:
 
 https://maker.ifttt.com/trigger/{event}/with/key/{your-IFTTT-key}
+''' Here I use My own IFTTT-Key '''
 
 
 You’ll need to substitute the {event} part with whatever name you gave, when you created the applet. The {your-IFTTT-key} part is already populated with your IFTTT key.
