@@ -1,4 +1,3 @@
-
 import time
 import json
 import datetime
@@ -52,9 +51,14 @@ def main():
             ifttt_webhook('BitcoinPriceEmergency', price)
         
         if len(bitcoin_history) == 5:
+            print("Collected Data", len(bitcoin_history), "times")
             ifttt_webhook('bitcoin_price_update', format_bitcoin_history(bitcoin_history))
             bitcoin_history = []
-        time.sleep(5 * 60)
-        print(len(bitcoin_history))
+            print("Response Send to Telegram")
+            print("Resetting collected to 0")
+        time.sleep(5)
+        print("Collected Data", len(bitcoin_history), "times")
 if __name__ == "__main__":
+    print("Server Initiated")
+    
     main()
